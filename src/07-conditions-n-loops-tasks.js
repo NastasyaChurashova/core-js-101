@@ -366,12 +366,13 @@ function toNaryString(/* num, n */) {
  *   ['/web/assets/style.css', '/.bin/mocha',  '/read.me'] => '/'
  *   ['/web/favicon.ico', '/web-scripts/dump', '/verbalizer/logs'] => '/'
  */
-function getCommonDirectoryPath(/*pathes*/) {
+function getCommonDirectoryPath(/* pathes */) {
   throw new Error('Not implemented');
   // let result = '';
   // for (let i = 0; i < pathes[0].length; i += 1) {
   //   for (let j = 0; j < pathes[0].length; j += 1) {
-  //     if (pathes[0].charAt(i) !== pathes[j].charAt(i)) return result.substring(0, result.lastIndexOf('/') + 1);
+  //     if (pathes[0].charAt(i) !== pathes[j].charAt(i))
+  // return result.substring(0, result.lastIndexOf('/') + 1);
   //   }
   //   result += pathes[0].charAt(i);
   // }
@@ -397,23 +398,24 @@ function getCommonDirectoryPath(/*pathes*/) {
  *                         [ 6 ]]
  *
  */
-function getMatrixProduct(m1, m2) {
-  r_m1 = m1.length;  
-  col_m1 = m1[0].length;    
-  r_m2 = m2.length;  
-  col_m2 = m2[0].length;
+function getMatrixProduct(/* m1, m2 */) {
+  throw new Error('Not implemented');
+  //   r_m1 = m1.length;
+  //   col_m1 = m1[0].length;
+  //   r_m2 = m2.length;
+  //   col_m2 = m2[0].length;
 
-  let mult = new Array(r_m1);  
-  for (i=0; i<mult.length;i+=){     
-  mult[i] = new Array(col_m2).fill(0);
-}
-for (x=0; x < mult.length; x++) {      
-  for (y=0; y < mult[x].length; y++) {   
-      for (z=0; z<col_m1; z++) {              
-        mult [x][y] = mult [x][y] + m1[x][z]*m2[z][y]; 
-                 }      
-      }  
-  }
+//   let mult = new Array(r_m1);
+//   for (i=0; i<mult.length;i+=){
+//   mult[i] = new Array(col_m2).fill(0);
+// }
+// for (x=0; x < mult.length; x++) {
+//   for (y=0; y < mult[x].length; y++) {
+//       for (z=0; z<col_m1; z++) {
+//         mult [x][y] = mult [x][y] + m1[x][z]*m2[z][y];
+//                  }
+//       }
+//   }
 }
 
 
